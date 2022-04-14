@@ -176,7 +176,7 @@ window.addEventListener('load',
       border-top-color: #51d;
       border-radius: 50%;
       position: absolute;
-      left: 46%;
+      left: calc(50% - 25px);
       bottom: 50%;
       z-index: -1;
     }
