@@ -246,7 +246,7 @@ function callIframe(value) {
   
   iframe.style.display = 'block'
   loading.style.display = 'block'
-  iframe.src = 'https://give.unhcr.org/int/payment-confirmation-ukr-ogilvy'
+  iframe.src = 'https://give.unhcr.org/int/payment-confirmation-ukr-ogilvy/'
   iframe.style.height = '100 em'
 }
 
