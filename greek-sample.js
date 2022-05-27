@@ -82,8 +82,9 @@ window.addEventListener('load',
     }
     
     .unhcr-modal-header .unhcr-overlay-header-logo {
-      margin: 30px auto;
+      margin: 20px auto;
       max-width: 80%;
+      max-height: 100px;
     }
     
     .unhcr-overlay-close-button-container{
