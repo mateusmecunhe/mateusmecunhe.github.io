@@ -12,7 +12,7 @@ window.addEventListener('load',
     <div id="unhcr-overlay-internal-content">
     
       <div class="unhcr-modal-header">
-        <img class='unhcr-overlay-header-logo' src="https://donate.unhcr.org/sites/default/files/2022-05/Horizontal%20white_1.png" alt="">
+        <img class='unhcr-overlay-header-logo' src="https://donate.unhcr.org/themes/custom/donate/white-logo.svg" alt="">
         <div class="unhcr-overlay-title">
         Σήμερα, προτού προχωρήσετε με την κράτησή σας, μπορείτε να στηρίξετε τους ανθρώπους που έχουν ανάγκη με δύο μόνο κλικ.
         </div>
@@ -82,9 +82,9 @@ window.addEventListener('load',
     }
     
     .unhcr-modal-header .unhcr-overlay-header-logo {
-      margin: 20px auto;
+      margin: 30px auto;
       max-width: 80%;
-      max-height: 100px;
+      
     }
     
     .unhcr-overlay-close-button-container{
