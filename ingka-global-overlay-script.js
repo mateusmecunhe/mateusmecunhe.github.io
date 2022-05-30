@@ -18,7 +18,7 @@ window.addEventListener('load',
         </div>
       </div>
       <div class="unhcr-modal-body">
-      <p>More than 100 million people have been forced to flee war, conflicts, and persecution all around the world.</p>
+      <p>More than 100 million people have been forced to flee war, conflict, and persecution all around the world.</p>
       <p>Your donation will help refugees and ensure they are sheltered and protected.</p>
       </div>
       <div class="unhcr-overlay-cta">
