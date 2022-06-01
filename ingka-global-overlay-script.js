@@ -1,6 +1,5 @@
 window.addEventListener('load',
   (event) => {
-
     document.body.insertAdjacentHTML('afterbegin',
       `
     <div class="unhcr-modal" id="unhcr-donation-modal">
