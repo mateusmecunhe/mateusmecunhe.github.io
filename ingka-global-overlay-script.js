@@ -185,7 +185,6 @@ window.addEventListener('load',
   `)
     const modal = document.getElementById('unhcr-donation-modal')
     const closeButton = document.getElementById('unhcr-overlay-close-btn')
-    openModal(modal, true)
     closeButton.addEventListener('click', () => {
       closeModal(modal)
     })
