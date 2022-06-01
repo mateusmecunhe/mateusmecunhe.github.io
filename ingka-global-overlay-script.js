@@ -194,7 +194,7 @@ window.addEventListener('load',
         if (result.isPrivate){
           return
         }else{
-          openModal(modal)
+          openModal(modal, true)
         }
       }
     )
