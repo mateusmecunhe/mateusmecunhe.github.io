@@ -12,7 +12,7 @@ window.addEventListener('load',
     <div id="unhcr-overlay-internal-content">
     
       <div class="unhcr-modal-header">
-        <img class='unhcr-overlay-header-logo' src="https://donate.unhcr.org/sites/default/files/2022-05/RGB_hrzt_white_IKEA_in%20partnership.png" alt="">
+        <img class='unhcr-overlay-header-logo' src="https://res.cloudinary.com/unhcr/image/upload/v1654074324/RGB_hrzt_white_IKEA_in_partnership.png" alt="">
         <div class="unhcr-overlay-title">
         Together we can help the millions who have been forced to flee their homes.
         </div>
