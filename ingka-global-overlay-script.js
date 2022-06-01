@@ -1,4 +1,5 @@
 window.addEventListener('load',
+                        
   (event) => {
     document.body.insertAdjacentHTML('afterbegin',
       `
