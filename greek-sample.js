@@ -238,6 +238,6 @@ function callIframe(value) {
 
   iframe.style.display = 'block'
   loading.style.display = 'block'
-  iframe.src = 'https://unhcrint-test.iraiser.eu/overlay-test/'
+  iframe.src = 'https://give.unhcr.org/gr/payment-confirmation-ukr-gr/'
   iframe.style.height = '100 em'
 }
