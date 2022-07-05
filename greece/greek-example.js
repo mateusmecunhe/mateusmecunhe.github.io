@@ -14,7 +14,7 @@ window.addEventListener('load',
       <div class="unhcr-modal-header">
         <img class='unhcr-overlay-header-logo' src="https://donate.unhcr.org/themes/custom/donate/white-logo.svg" alt="">
         <div class="unhcr-overlay-title">
-        Σήμερα, προτού προχωρήσετε με την κράτησή σας, μπορείτε να στηρίξετε τους ανθρώπους που έχουν ανάγκη με δύο μόνο κλικ.
+        ΣΗΜΕΡΑ, ΠΡΟΤΟΥ ΠΡΟΧΩΡΗΣΕΤΕ ΜΕ ΤΗΝ ΚΡΑΤΗΣΗ ΣΑΣ, ΜΠΟΡΕΙΤΕ ΝΑ ΣΤΗΡΙΞΕΤΕ ΤΟΥΣ ΑΝΘΡΩΠΟΥΣ ΠΟΥ ΕΧΟΥΝ ΑΝΑΓΚΗ ΜΕ ΔΥΟ ΜΟΝΟ ΚΛΙΚ.
         </div>
       </div>
       <div class="unhcr-modal-body">
@@ -28,7 +28,7 @@ window.addEventListener('load',
       </div>
       
         <div class="unhcr-donate-btn-container">
-          <div class="unhcr-donate-btn" onclick="callIframe()">Κάντε δωρεά</div>
+          <div class="unhcr-donate-btn" onclick="callIframe()">ΚΑΝΕ ΔΩΡΕΑ</div>
         </div>
       
     </div>
