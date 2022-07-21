@@ -226,7 +226,7 @@ window.addEventListener('load',
     document.body.classList.add('unhcr-blur-background-content')
     modal.classList.add('unhcr-overlay-active')
     try{
-      sessionStorage.setItem('donation-overlay', 'active')
+      //sessionStorage.setItem('donation-overlay', 'active')
     } catch(error){
       console.log(error)
     }
