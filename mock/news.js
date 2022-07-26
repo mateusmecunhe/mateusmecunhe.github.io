@@ -3,6 +3,7 @@
 window.addEventListener('load',
 
   (event) => {
+    let cta = document
     let overlay_cta = document.getElementById('overlay-cta')
     overlay_cta.addEventListener('click', () => {
 
@@ -40,11 +41,7 @@ window.addEventListener('load',
   </div>
 
     <style>
-    #overlay-cta{
-      color: #0072bc;
-      text-decoration: underline;
-      cursor: pointer;
-    }
+
 
     #unhcr-donation-modal, #unhcr-donation-modal * {
       box-sizing: border-box;
@@ -257,6 +254,6 @@ function callIframe(value) {
 
   iframe.style.display = 'block'
   loading.style.display = 'block'
-  iframe.src = 'https://give.unhcr.org/gr/payment-confirmation-ukr-gr/'
+  iframe.src = 'https://unhcrint-test.iraiser.eu/overlay-test/'
   iframe.style.height = '100 em'
 }
