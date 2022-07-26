@@ -4,10 +4,10 @@ window.addEventListener('load',
 
   (event) => {
     let overlay_cta = document.getElementById('overlay-cta')
-overlay_cta.addEventListener('click',()=>{
-    
-    document.body.insertAdjacentHTML('afterbegin',
-    `
+    overlay_cta.addEventListener('click', () => {
+
+      document.body.insertAdjacentHTML('afterbegin',
+        `
     <div class="unhcr-modal" id="unhcr-donation-modal">
     <div class="unhcr-overlay-close-button-container">
         <button id='unhcr-overlay-close-btn' data-close-button class="unhcr-overlay-close-button">close &times;</button>
@@ -40,6 +40,12 @@ overlay_cta.addEventListener('click',()=>{
   </div>
 
     <style>
+    #overlay-cta{
+      color: #0072bc;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
     #unhcr-donation-modal, #unhcr-donation-modal * {
       box-sizing: border-box;
     }
@@ -88,6 +94,8 @@ overlay_cta.addEventListener('click',()=>{
     }
     
     .unhcr-modal-header .unhcr-overlay-header-logo {
+      width: auto;
+      border: none;
       margin: 30px auto;
     }
     
@@ -195,15 +203,15 @@ overlay_cta.addEventListener('click',()=>{
     </style>
 
   `)
-  const modal = document.getElementById('unhcr-donation-modal')
-  const closeButton = document.getElementById('unhcr-overlay-close-btn')
-  openModal(modal, true)
-  closeButton.addEventListener('click', () => {
-    closeModal(modal)
-  })
-})
+      const modal = document.getElementById('unhcr-donation-modal')
+      const closeButton = document.getElementById('unhcr-overlay-close-btn')
+      openModal(modal, true)
+      closeButton.addEventListener('click', () => {
+        closeModal(modal)
+      })
+    })
 
-    
+
   })
 
 const viewportMetaTag = document.querySelector('meta[name="viewport"]');
