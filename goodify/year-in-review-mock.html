@@ -1,0 +1,156 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>hello, <span id="name"></span></h1>
+    <p id="initial_greeting" class="hide">
+
+    </p>
+    <p id="donation_handle" class="hide">
+
+    </p>
+    <p id="final_greeting" class="hide">
+
+    </p>
+
+
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .animation {
+            display: block;
+            opacity: 1;
+            animation-name: fadeIn;
+            -webkit-animation-name: fadeIn;
+            animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-timing-function: ease-in-out;
+            visibility: visible !important;
+
+        }
+
+        @keyframes fadeIn {
+            0% {
+                transform: scale(0);
+                opacity: 0.0;
+            }
+
+            60% {
+                transform: scale(1.1);
+            }
+
+            80% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                -webkit-transform: scale(0);
+                opacity: 0.0;
+            }
+
+            60% {
+                -webkit-transform: scale(1.1);
+            }
+
+            80% {
+                -webkit-transform: scale(0.9);
+                opacity: 1;
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        // URL parameters
+        const name = capitalizeFirstLetter(urlParams.get('name'))
+        const total_amount_given_12_months = urlParams.get('tag12')
+
+        // HTML customization
+        let name_placement = document.getElementById('name')
+
+
+        let initial_greeting = document.getElementById('initial_greeting')
+        let donation_handle = document.getElementById('donation_handle')
+        let final_greeting = document.getElementById('final_greeting')
+
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
+        object_for_customization = {
+            'initial_greeting': null,
+            'donation_handle': null,
+            'final_greeting': null
+        }
+
+        function get_donation_range(total_amount_given_12_months) {
+            total_amount_given = +total_amount_given_12_months
+            if (total_amount_given < 100) {
+                object_for_customization['initial_greeting'] = 'Thank you, <b>' + name + '</b>, for standing with refugees'
+                object_for_customization['donation_handle'] = `<b>` + name + `</b>, you helped a family like Mary's  survive throughout the year. <br> Their kids could eat and go to school`
+                object_for_customization['final_greeting'] = `Refugees like Mary and her family are thankful for all your help, <b>` + name + `</b>`
+
+            } else if (total_amount_given < 150) {
+                object_for_customization['initial_greeting'] = 'Thank you, <b>' + name + '</b>, for being so generous with refugees'
+                object_for_customization['donation_handle'] = `<b>` + name + `</b>, you helped a family like Joana's family thrive despite all they had to go through.  <br> Their kids graduated and are ready to start their new lives`
+                object_for_customization['final_greeting'] = `Refugees like Joana and her family are thankful for all your help, <b>` + name + `</b>`
+            } else {
+                object_for_customization['initial_greeting'] = 'Thank you, <b>' + name + '</b>, for your generosity. We wish more people were this generous.'
+                object_for_customization['donation_handle'] = `<b>` + name + `</b>, you helped a little refugee girl, Amira. Before your donations, she was hungry and lost. <br> After your generosity, however, she was sheltered, with warmth and food. She is going to start studying next month.`
+                object_for_customization['final_greeting'] = `Refugees like little Amira are thankful for all your help, <b>` + name + `</b>`
+
+            }
+            console.log(object_for_customization)
+        }
+
+        get_donation_range(total_amount_given_12_months)
+        function customize(name, object_for_customization) {
+            console.log(initial_greeting)
+            console.log(object_for_customization)
+            name_placement.innerText = name
+            initial_greeting.innerHTML = object_for_customization['initial_greeting']
+            setTimeout(() => {
+                initial_greeting.classList.remove('hide')
+                initial_greeting.classList.add('animation')
+            }, 500)
+
+            donation_handle.innerHTML = object_for_customization['donation_handle']
+            setTimeout(() => {
+                donation_handle.classList.remove('hide')
+                donation_handle.classList.add('animation')
+            }, 1750)
+
+            final_greeting.innerHTML = object_for_customization['final_greeting']
+            setTimeout(() => {
+                final_greeting.classList.remove('hide')
+                final_greeting.classList.add('animation')
+            }, 4000)
+
+
+        }
+
+        customize(name, object_for_customization)
+
+    </script>
+</body>
+
+</html>
