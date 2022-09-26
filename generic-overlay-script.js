@@ -209,7 +209,8 @@ window.addEventListener('load',
   function openModal(modal) {    
     if (modal == null) return
     try {
-      if (sessionStorage.getItem('donation-overlay') == 'active') return
+      //if (sessionStorage.getItem('donation-overlay') == 'active') return
+      console.log("...")
     }
     catch (error){
       console.log(error)
