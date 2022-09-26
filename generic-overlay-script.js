@@ -208,20 +208,8 @@ window.addEventListener('load',
   
   function openModal(modal) {    
     if (modal == null) return
-    try {
-      //if (sessionStorage.getItem('donation-overlay') == 'active') return
-      console.log("...")
-    }
-    catch (error){
-      console.log(error)
-    }
     document.body.classList.add('unhcr-blur-background-content')
     modal.classList.add('unhcr-overlay-active')
-    try{
-      sessionStorage.setItem('donation-overlay', 'active')
-    } catch(error){
-      console.log(error)
-    }
 }
 
 function closeModal(modal) {
