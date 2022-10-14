@@ -4,7 +4,7 @@ window.addEventListener('load',
 
   (event) => {
     let cta = document
-    let overlay_cta = document.getElementById('overlay-cta')
+    let overlay_cta = document.getElementById('homefeature-donate')
     overlay_cta.addEventListener('click', () => {
 
       document.body.insertAdjacentHTML('afterbegin',
