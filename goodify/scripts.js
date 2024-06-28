@@ -52,29 +52,29 @@ document.addEventListener('DOMContentLoaded', function() {
     function displaySummaryStats(summary) {
         const summaryStats = document.getElementById('summary-stats');
         summaryStats.innerHTML = `
-            <p>Total Donations: $${summary.totalDonations}</p>
-            <p>Number of Donors: ${summary.numberOfDonors}</p>
-            <p>Projects Funded: ${summary.projectsFunded}</p>
+            <li>Total Donations: $${summary.totalDonations}</li>
+            <li>Number of Donors: ${summary.numberOfDonors}</li>
+            <li>Projects Funded: ${summary.projectsFunded}</li>
         `;
     }
 
     function displayImpactDetails(impact) {
         const impactDetails = document.getElementById('impact-details');
         impactDetails.innerHTML = impact.map(detail => `
-            <div class="impact-item">
+            <li><div class="impact-item">
                 <h3>${detail.title}</h3>
                 <p>${detail.description}</p>
-            </div>
+            </div></li>
         `).join('');
     }
 
     function displayDonorStories(stories) {
         const donorStories = document.getElementById('donor-stories');
         donorStories.innerHTML = stories.map(story => `
-            <div class="story-item">
+            <li><div class="story-item">
                 <h3>${story.name}</h3>
                 <p>${story.story}</p>
-            </div>
+            </div></li>
         `).join('');
     }
 });
@@ -134,3 +134,23 @@ sampleJson = {
         "data": [5000, 8000, 6000, 7000]
     }
 }
+
+
+
+document.addEventListener('click', function(event) {
+    // Get the width of the viewport
+    const pageWidth = window.innerWidth;
+    
+    // Get the x-coordinate of the click event
+    const clickX = event.clientX;
+    
+    // Determine if the click was on the left or right half
+    if (clickX < pageWidth / 2) {
+        
+        window.prevStory()
+    } else {
+
+        window.nextStory()
+    } 
+});
+
