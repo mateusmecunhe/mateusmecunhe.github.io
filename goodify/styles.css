@@ -190,3 +190,16 @@ strong {
     border: 0px solid #20B2AA;
     border-radius: 50%;
 }
+
+@media (max-width: 767px) {
+
+    header{
+        font-size: 12px;
+    }
+    .story-title{
+        font-size: 20pt;
+    }
+    .story-subtitle{
+        font-size: 13pt;
+    }
+}
