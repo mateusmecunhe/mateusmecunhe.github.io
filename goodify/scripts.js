@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function displaySummaryStats(summary) {
         const summaryStats = document.getElementById('summary-stats');
         summaryStats.innerHTML = `
-            <li>Total Donations: $${summary.totalDonations}</li>
-            <li>Number of Donors: ${summary.numberOfDonors}</li>
+            <li>Refugee Children Helped: {summary.totalDonations}</li>
+            <li>Families impacted: ${summary.numberOfDonors}</li>
             <li>Projects Funded: ${summary.projectsFunded}</li>
         `;
     }
@@ -105,7 +105,7 @@ function createDonationChart(chartData) {
 }
 sampleJson = {
     "summary": {
-        "totalDonations": 50000,
+        "totalDonations": 500,
         "numberOfDonors": 120,
         "projectsFunded": 15
     },
